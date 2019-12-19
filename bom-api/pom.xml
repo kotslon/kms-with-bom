@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>ru.sbt.sandbox</groupId>
+    <artifactId>bom-api</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <kma-api.version>1.0-SNAPSHOT</kma-api.version>
+        <kmb-api.version>1.0-SNAPSHOT</kmb-api.version>
+        <kmx-api.version>1.0-SNAPSHOT</kmx-api.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>ru.sbt.sandbox</groupId>
+                <artifactId>kma-api</artifactId>
+                <version>${kma-api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ru.sbt.sandbox</groupId>
+                <artifactId>kmb-api</artifactId>
+                <version>${kmb-api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ru.sbt.sandbox</groupId>
+                <artifactId>kmx-api</artifactId>
+                <version>${kmx-api.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>
